@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic html5</title>
+</head>
+<body>
+    <!-- main ehading of pahe - only use h1 once per page-->
+    <header>
+        <h1>Proper use of html5 semantic markup</h1>
+    </header>
+
+    <!-- main navigation links to relative internal links only (one per page)-->
+    <nav>
+        <ul>
+            <li><a href="#latin-dummy">LINK 1</a></li>
+            <li><a href="#">LINK 2</a></li>
+            <li><a href="#">LINK 3</a></li>
+        </ul>
+    </nav>
+
+    <!-- main content of the page-->
+    <main>
+        <!-- grouping content together-->
+        <section id="latin-dummy">
+            <h2>latin "dummy" text</h2>
+            <p>
+                I aint typing all that
+            </p>
+            <!-- informational images-->
+            <figure>
+                <img src="http://placehold.it/300x300" alt="verbal description">
+                <figcaption>image title</figcaption>
+            </figure>
+
+            <aside>
+                <h2>supplementary social media links</h2>
+                <ul>
+                    <li><a href="#">X</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>designed by me</p>
+        <address>nico@nico.nico</address>
+        <small>&copy; 2023</small>
+    </footer>
+</body>
+</html>
