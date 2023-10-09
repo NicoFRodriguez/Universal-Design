@@ -1,3 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+body {
+    background-color:#FFF3B9;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+p {
+    color: black;
+    line-height: 1.8em;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto; 
+    /* margin: 0 10px 20px 30px; */
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+h2 {
+    font-size: 1.3em;
+}
+h3 {
+    font-size: 1.2em;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:link {
+    color: black;
+}
+nav ul li a:visited {
+    color: black;
+}
+nav ul li a:hover {
+    color: rgb(52, 38, 251);
+}
+nav ul li a:active {
+    color: black;
+}
+
 .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
