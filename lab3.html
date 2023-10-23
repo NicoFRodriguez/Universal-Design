@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+    <link href="css/lab3.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a class="skip-link" href="#maincontent">Skip to main content</a>
+        <header>
+            <h1> Club Atlético de Madrid</h1>
+        </header>
+        <nav>
+            <h2 class="sr-only">main navigation</h2>
+            <ul>
+                <li><span aria-hidden=”true” class="material-icons">info</span><a href="#about">About</a></li>
+                <li><span aria-hidden=”true” class="material-icons">sports_soccer</span><a href="#appearance">Top appearance makers</a></li>
+                <li><span aria-hidden=”true” class="material-icons">quiz</span><a href="#survey">Survey</a></li>
+            </ul>
+        </nav>
+        <main id="maincontent">
+            <section id="about">
+            <h2>About</h2>
+            <p><strong>Club Atlético de Madrid</strong>, S.A.D., known simply as <strong>Atleti</strong> in the Spanish-speaking world and commonly referred to at the international level as <strong>Atlético Madrid</strong>, is a Spanish professional football club based in Madrid that plays in La Liga. The club play their home games at the Metropolitano, which has a capacity of 70,460.</p>
+            </section>
+            <section id='appearance'>
+                <h2>Top appearance makers in history</h2>
+                <p>Here is a list of the top 10 players that have made the most appearances in the history of <mark>Atlético de Madrid</mark>.</p>
+                <table>
+                    <caption>Top appearance makers</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Number of games</th>
+                            <th scope="col">Currently playing?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jorge Resurreción <em>(Koke)</em></td>
+                            <td>594</td>
+                            <td><mark>Y</mark></td>
+                        </tr>
+                        <tr>
+                            <td>Adelardo Rodríguez</td>
+                            <td>553</td>
+                            <td>N</td>
+                        </tr>
+                        <tr>
+                            <td>Tomás Reñones</td>
+                            <td>483</td>
+                            <td>N</td>
+                        </tr>
+                        <tr>
+                            <td>Enrique Collar</td>
+                            <td>468</td>
+                            <td>N</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos Aguilera</td>
+                            <td>455</td>
+                            <td>N</td>
+                        </tr>
+                        <tr>
+                            <td>Isacio Calleja</td>
+                            <td>425</td>
+                            <td>N</td>
+                        </tr>
+                        <tr>
+                            <td>Juan Carlos Arteche</td>
+                            <td>421</td>
+                            <td>N</td>
+                        </tr>
+                        <tr>
+                            <td>Gabi Fernández</td>
+                            <td>417</td>
+                            <td>N</td>
+                        </tr>
+                        <tr>
+                            <td>Fernando Torres</td>
+                            <td>404</td>
+                            <td>N</td>
+                        </tr>
+                        <tr>
+                            <td>Jan Oblak</td>
+                            <td>403</td>
+                            <td><mark>Y</mark></td>
+                        </tr>
+                    </tbody>
+            </table>
+            </section>
+            <section id="survey">
+                <h2>Survey</h2>
+                <form id="myform" method="post">
+                    <fieldset>
+                        <legend>Give us your information!</legend>
+                        <label for="name">
+                            what is your name? *required
+                            <input type="text" id="name" required>
+                        </label>  
+                        <label for="team">
+                            what team do you support?
+                            <input type="text" id="team">
+                        </label>
+                        <label for="phone">
+                            what is your phone number?
+                            <input type="tel" id="phone" minlength="7">
+                        </label>
+                        <label for="age">
+                            how old are you?
+                            <input type="number" id="age">
+                        </label>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p> site by Nico
+                <address>
+                    <a href="mailto:niro9651@colorado.edu">niro9651@colorado.edu</a>
+                </address>
+            <small>&copy; 2023</small>
+        </footer>
+    </div>
+</body>
+</html>

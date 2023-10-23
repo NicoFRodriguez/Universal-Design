@@ -9,10 +9,10 @@
     transform: translateY(-200%);
 }
 
-skip-link:focus{
+.skip-link:focus{
     transform: translateY(-100%)
 }
 
-skip-link {
+.skip-link {
     transition: transform 0.3s;
 }
