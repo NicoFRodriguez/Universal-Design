@@ -1,21 +1,48 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-</style>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Accessible grid</title>
+  <link href="css/index.css" rel="stylesheet">
+</head>
 <body>
+<div class="container">
+  <a class="skip-link" href="#maincontent">Skip to main content</a>
+  <header>
+    <h1>Nico Rodriguez landing page</h1>
+  </header>
+  <h2 class="sr-only">Main Navigation</h2>
+  <nav>
+    <ul>
+      <li><a href="lab2.html">Lab 2</a></li>
+      <li><a href="lab3.html">Lab 3</a></li>
+      <li><a href="lab4.html">Lab 4</a></li>
+    </ul>
+  </nav>
+  <main id="maincontent">
+    <section>
+      <h2>About me</h2>
+      <p>My name is Nicolas Rodriguez and I am a 4th year Computer Science student. I was born in Spain where I lived until I was 14 before moving to Colorado in 2016. I have lived here in Colorado ever since. I am very into sports, both watching and playing. I love to ski and play tennis, I also love to watch football (soccer) and the NBA. My favorite teams are Atlético de Madrid and the Denver Nuggets.</p>
+    </section>
+    </main>
+    <aside id="aside1">
 
-<div class="w3-container w3-red"> <h1 align="center">Nico Rodriguez Universal Design Portal</h1></div>
+    </aside>
+    <aside id="aside2">
+      <figure>
+        <img src="img/the_thinker.jpg" style="height:500px" alt="Picture of Jokic talking to media, not looking in his usual shape.">
+        <figcaption>the thinker</figcaption>
+        </figure>
+    </aside>
+  <footer>
+    <small> designed by Nico </small>
+  </footer>
 
-<div class="w3-container w3-center">
-    <h2>About me</h2>
-    <p>I am a senior studying Computer Science. I was originally born in Spain and moved to Colorado when I was 13 years old.
-        I love to ski and play tennis, as well as watching soccer.</p>
-  </div>
-  <div class="w3-container w3-center"> 
-  <a href="lab2.html">Lab 2</a>
-  <a href="lab3.html">Lab 3</a>
-  <a href="lab4.html">Lab 4</a>
-  </div>
+</div> <!-- end container -->
 </body>
 </html>
+
+
