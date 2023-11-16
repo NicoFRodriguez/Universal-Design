@@ -156,7 +156,7 @@ nav ul li a:visited {
 }
 
 .skip-link:focus{
-    transform: translateY(-100%)
+    transform: translateY(0)
 }
 
 .skip-link {
