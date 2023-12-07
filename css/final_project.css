@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+body {
+  background: #f0a1a1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Vollkorn', serif;
+  font-weight: normal;
+  padding: .2em 0;
+}
+
+p {
+  margin: 1.8em 0;
+  line-height: 1.8em;
+  color: black;
+
+}
+
+h1 {
+    font-size:3.25em;
+    color: black;
+}
+h2,
+h3 {
+    color: black;
+}
+h2 {
+    font-size:2.25em;
+    text-align: left;
+}
+
+nav {
+    padding:2em;
+}
+main,
+footer {
+  padding: 1.25em;
+  color:black;
+  /* border: 1px rgb(253, 242, 84); */
+}
+header {
+    padding: 1.5em;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+main {
+    text-align: left;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns:
+   1fr       2fr       1fr;
+  grid-template-areas:
+  "navvy     navvy     navvy"
+  "heady     heady     heady"
+  "mainy    mainy     mainy"
+  "footy     footy     footy";
+}
+
+header {grid-area: heady; background:#f0a1a1;}
+nav {grid-area: navvy; background:#f0a1a1;}
+main {grid-area: mainy; background: #f0a1a1; max-height: 100%;}
+footer {grid-area: footy; background: #f0a1a1;}
+
+nav ul {
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none
+}
+
+nav ul li a:link {
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+@media screen
+  and (min-width: 641px)
+  and (max-width: 900px)  {
+.container {
+grid-template-columns:
+   1fr 1fr;
+grid-template-areas:
+  "heady heady"
+  "navvy navvy"
+  "mainy mainy"
+  "footy footy";
+}
+}
+
+@media screen
+  and (max-width: 640px)  {
+.container {
+grid-template-columns:
+   1fr;
+grid-template-areas:
+  "heady"
+  "mainy"
+  "navvy"
+  "footy";
+}
+nav ul {
+  flex-flow: column nowrap;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  padding: 10px 5px;
+  margin: 5px;
+  border: 1px black solid;
+  background: white;
+
+}
+}
