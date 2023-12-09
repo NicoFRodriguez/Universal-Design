@@ -18,39 +18,54 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Vollkorn', serif;
   font-weight: normal;
   padding: .2em 0;
+}
+h3 {
+    text-align:left;
+    font-size: 20px;
+}
+h4 {
+    text-align:left;
+    font-size: 17px;
 }
 
 p {
   margin: 1.8em 0;
   line-height: 1.8em;
+
 }
 
-h1 {font-size:3em;}
-h2 {font-size:2.25em;}
+h1 {
+    font-size:3em;}
+h2 {
+    font-size:2.25em;}
 
-nav
- {
-    border: 20px white solid;
-    border-left: none;
-    border-right: none;
-}
-
-header,
 nav,
-aside,
+main {
+    border: 20px white solid;
+    padding: 1.5em;
+}
+
+header {
+    padding:0.25em;
+}
+
+
 footer {
   padding: 1.5em;
   /* border: 1px black solid; */
 }
 
 header,
+main,
 footer {
   text-align: center;
 }
+
 
 
 .container {
@@ -65,17 +80,15 @@ footer {
   grid-template-areas:
   "heady     heady     heady"
   "navvy     navvy     navvy"
-  "aside1    mainy     aside2"
-  "aside1    mainy     aside2"
-  "aside1    mainy     aside2"
+  "mainy    mainy     mainy"
+  "mainy    mainy     mainy"
+  "mainy    mainy     mainy"
   "footy     footy     footy";
 }
 
 header {grid-area: heady; background:white;}
 nav {grid-area: navvy; background:#f3f3f3;}
 main {grid-area: mainy; background: #f3f3f3; max-height: 100%;}
-#aside1 {grid-area: aside1; background: #f3f3f3;}
-#aside2 {grid-area: aside2; background: #f3f3f3;}
 footer {grid-area: footy; background: white;}
 
 nav ul {
@@ -98,7 +111,6 @@ grid-template-areas:
   "heady heady"
   "navvy navvy"
   "mainy mainy"
-  "aside1 aside2"
   "footy footy";
 }
 }
@@ -111,8 +123,6 @@ grid-template-columns:
 grid-template-areas:
   "heady"
   "mainy"
-  "aside1"
-  "aside2"
   "navvy"
   "footy";
 }
