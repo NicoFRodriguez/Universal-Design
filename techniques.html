@@ -10,51 +10,158 @@
 </head>
 <body>
 <div class="container">
+  <a class="skip-link" href="#maincontent">Skip to main content</a>
   <header>
     <h1>Design techniques</h1>
   </header>
   <nav>
     <h2 class="sr-only">Main Navigation</h2>
     <ul>
-        <li><a href="final_project.html">Home</a></li>
-        <li><a href="history.html">History of accessibility</a></li>
-        <li><a href="techniques.html">Design techniques</a></li>
+        <li><a href="final_project.html">What</a></li>
+        <li><a href="history.html">Why</a></li>
+        <li><a href="techniques.html">How</a></li>
     </ul>
   </nav>
-  <main>
+  <main id="maincontent">
     <section>
-      <h2>Accessible design techniques</h2>
+      <h2>Ways we can implement accessibility</h2>
+      <p>
+        There are many simple ways in which designers can design their websites to be accessible, this page will be all about showing some of these design techniques.
+        This website itself is designed using many of the techniques discussed.
+      </p>
+      <h3>Don Normans Principles of design</h3>
+      <p>
+        Don Normans principles of design are not specific techniques, but they serve as a general rule of thumb to follow whenever designing anything.
+        Adhering to these principles will always help designes be more accessible. 
+        Normans principles are the following: 
+      </p>
       <ul>
-        <li>Placeholder</li>
-        <li>Placeholder</li>
-        <li>Placeholder</li>
-        <li>Placeholder</li>
-        <li>Placeholder</li>
+        <li>1. Visibility</li>
+        <li>2. Feedback</li>
+        <li>3. Constraints</li>
+        <li>4. Mapping</li>
+        <li>5. Consistency</li>
+        <li>6. Affordance</li>
       </ul>
-      <p>Danish fontina mozzarella cottage cheese. Cheese slices bavarian bergkase cheese slices dolcelatte fromage bocconcini rubber cheese jarlsberg. Bavarian bergkase who moved my cheese mascarpone cut the cheese cheese and wine croque monsieur croque monsieur cheeseburger. Cheese on toast jarlsberg brie emmental squirty cheese pepper jack mozzarella cottage cheese. When the cheese comes out everybody's happy rubber cheese fromage monterey jack.</p>
-      <p>Fromage mozzarella cow. Pecorino melted cheese bocconcini babybel cheesy feet cheddar bavarian bergkase monterey jack. Mozzarella airedale cheese and wine queso paneer red leicester brie blue castello. Cheesecake dolcelatte smelly cheese everyone loves pecorino.</p>
-      <h2>Use of these techniques</h2>
-      <p>Camembert de normandie camembert de normandie cheese slices. Cheese triangles bavarian bergkase bavarian bergkase fondue brie fromage edam jarlsberg. Cow cream cheese cheese on toast stilton boursin roquefort babybel pecorino. Feta roquefort.</p>
-      <figure>
-        <img src="http://placehold.it/300x300" alt="placeholder image">
-        <figcaption>Placeholder image</figcaption>
-        </figure>
-      <p>Cheeseburger halloumi cheese strings. Cheese and biscuits halloumi cheese and biscuits halloumi cheesecake cheesecake cheesecake brie. Mozzarella queso cauliflower cheese croque monsieur pecorino fromage cheese triangles fromage. Halloumi mascarpone cheeseburger fromage frais fromage frais cauliflower cheese cheese slices mozzarella. The big cheese danish fontina.</p>
-      <figure>
-        <img src="http://placehold.it/300x300" alt="placeholder image">
-        <figcaption>Placeholder image</figcaption>
-        </figure>
-      <p>Danish fontina mozzarella cottage cheese. Cheese slices bavarian bergkase cheese slices dolcelatte fromage bocconcini rubber cheese jarlsberg. Bavarian bergkase who moved my cheese mascarpone cut the cheese cheese and wine croque monsieur croque monsieur cheeseburger. Cheese on toast jarlsberg brie emmental squirty cheese pepper jack mozzarella cottage cheese. When the cheese comes out everybody's happy rubber cheese fromage monterey jack.</p>
-      <h2>Ways we can improve</h2>
-      <p>Cheeseburger halloumi cheese strings. Cheese and biscuits halloumi cheese and biscuits halloumi cheesecake cheesecake cheesecake brie. Mozzarella queso cauliflower cheese croque monsieur pecorino fromage cheese triangles fromage. Halloumi mascarpone cheeseburger fromage frais fromage frais cauliflower cheese cheese slices mozzarella. The big cheese danish fontina.</p>
-      <p>Cheeseburger halloumi cheese strings. Cheese and biscuits halloumi cheese and biscuits halloumi cheesecake cheesecake cheesecake brie. Mozzarella queso cauliflower cheese croque monsieur pecorino fromage cheese triangles fromage. Halloumi mascarpone cheeseburger fromage frais fromage frais cauliflower cheese cheese slices mozzarella. The big cheese danish fontina.</p>
+      <p>
 
+      </p>
+      <h3>HTML5 semantic structure</h3>
+      <p>
+        One of the most important features of HTML5 is its semantics. Semantic HTML refers to syntax that makes the HTML more comprehensible by better defining the different sections and layout of web pages. It makes web pages more informative and adaptable, allowing browsers and search engines to better interpret content.
+        These are some of the semantic elements that can be used to define things on your website:
+      </p>
+        <ul>
+          <li><code>&lt;article&gt;</code></li>
+          <li><code>&lt;aside&gt;</code></li>
+          <li><code>&lt;details&gt;</code></li>
+          <li><code>&lt;figcaption&gt;</code></li>
+          <li><code>&lt;figure&gt;</code></li>
+          <li><code>&lt;footer&gt;</code></li>
+          <li><code>&lt;header&gt;</code></li>
+          <li><code>&lt;main&gt;</code></li>
+          <li><code>&lt;mark&gt;</code></li>
+          <li><code>&lt;table&gt;</code></li>
+          <li><code>&lt;form&gt;</code></li>
+        </ul>
+      <h3>Forms</h3>
+      <p>
+        This is an example of one of the semantic elements outlined above, in this case, a form.
+      </p>
+      <form id="myform" method="post">
+        <fieldset>
+            <legend>Example of an accessible form</legend>
+            <label for="name">
+                What is your name?
+                <input type="text" id="name">
+            </label>  
+            <label for="team">
+                What is your email?
+                <input type="text" id="team">
+            </label>
+            <label for="age">
+                What do you think of this website? (Out of 10)
+                <input type="number" id="age">
+            </label>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+      <h3>Color contrast</h3>
+      <p>
+        Making sure that your website has good color contrast is essential in order for the website to both look appealing, but also be accesible.
+        Also, ensuring that the colors you are using are color blind safe is very important too.
+        A great tool for this is the <a href="https://color.adobe.com/create/color-wheel">adobe colors</a> website.
+      </p>
+      <p>
+        For example, I used the "Accessibility tools" section of the website to check the color of the visited links in the nav bar, with the background color.
+      </p>
+      <figure style="text-align: center">
+        <img src="img/colors.png" style="height:350px" alt="image showing accessibility tool in adobe colors">
+        <figcaption>Checking color contrast on Adobe colors</figcaption>
+        </figure>
+      <h3>Screen reader only</h3>
+      <p>
+        Many people rely on screenreaders to interact with the content on webpages. 
+        Using css, we can hide elements visually but not for screen readers, ensuring that people using screen readers have access to this content. 
+      </p>
+      <h3>Skip navigation bar</h3>
+      <p>
+        Another element we can implement using css is creating a pop up when tabbing through a website which gives the option for users to skip the navigation bar and go straight to the main content.
+      </p>
+      <p>
+        If you press tab right now, you will see exactly what it looks like!
+      </p>
+      <h3>How do you make sure its accessible?</h3>
+      <p>
+        What if you have desgined your website, and you think you did a good job in making it accessible but arent completely sure?
+        Like adobe colors, there are many online resources you can use to validate your website, and ensure lives up to your expectations.
+      </p>
+      <p>
+        Here are three incedbile resources for checking your webpage:
+      </p>
+      <ul>
+        <li>1. HTML validator</li>
+        <li>2. HTML outliner</li>
+        <li>3. WAVE</li>
+      </ul>
+      <p>
+
+      </p>
+      <h4> HTML Validator</h4>
+      <p>
+        If you visit <a href="https://validator.nu/">this</a> link, it will take you to the Nu html checker. On this site, you can upload a file, or even copy and paste all of your code into the text box.
+        Once you do this, the program will run and you will receive feedback on your website. It will check your html, and tell you if it found any errors in your code.
+        Here is an example of what you could see when using this tool:
+      </p>
+      <figure style="text-align: center">
+        <img src="img/html_checker.png" style="height:350px" alt="image showing html validator website, showing the inpiutted code contains an error">
+        <figcaption>Example output of html validator</figcaption>
+        </figure>
+      <p>
+        As you can see at the bottom of the image, the code contains an error. Now I would know that I need to go back and fix that error.
+      </p>
+      <h4>HTML Outliner</h4>
+      <p>
+        The outliner is a chrome extension that shows the user the structure of their website. 
+        This helps with finding any untitled elements.
+        The extension can be found in <a href="https://chromewebstore.google.com/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo">this</a> link.
+      </p>
+      <h4>WAVE</h4>
+      <p>
+        Wave is another browser extension, like the html outliner.  
+        It provides visual feedback about the accessibility of your web content by injecting icons and indicators into your page. 
+        No automated tool can tell you if your page is accessible, but WAVE facilitates human evaluation and educates about accessibility issues. 
+        All analysis is done entirely within the Chrome browser allowing secure valuation of intranet, local, password protected, and other sensitive web pages.
+      </p>
+      <p>
+        Here is an example of me using the WAVE tool on the "What?" page of this website:
+      </p>
+      <figure style="text-align: center">
+        <img src="img/wave.png" style="height:350px" alt="image showing WAVE tool interface">
+        <figcaption>Example output of WAVE</figcaption>
+        </figure>
     </section>
   </main>
-  <aside id="aside1">
-    <h2>Aside</h2>
-    <p>Feature to be implemented</p>
-  </aside>
   <footer>
     <small> designed by Nico</small>
   </footer>

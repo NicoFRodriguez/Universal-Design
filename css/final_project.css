@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 *,
 *:before,
 *:after {
@@ -22,16 +22,16 @@
 }
 
 body {
-  background: #f0a1a1;
+  background: white;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Vollkorn', serif;
+  font-family: 'Bree Serif', serif;
   font-weight: normal;
   padding: .2em 0;
 }
@@ -40,11 +40,15 @@ p {
   margin: 1.8em 0;
   line-height: 1.8em;
   color: black;
-
+  /* text-align: center; */
 }
 
+ol li{
+  font-size:18px;
+ }
+
 h1 {
-    font-size:3.25em;
+    font-size:3.5em;
     color: black;
 }
 h2,
@@ -52,18 +56,21 @@ h3 {
     color: black;
 }
 h2 {
-    font-size:2.25em;
+    font-size:2em;
     text-align: left;
 }
 
 nav {
     padding:2em;
+    border: 20px white solid;
+}
+header {
+  border: 20px white solid;
 }
 main,
 footer {
   padding: 1.25em;
   color:black;
-  /* border: 1px rgb(253, 242, 84); */
 }
 header {
     padding: 1.5em;
@@ -94,10 +101,10 @@ main {
   "footy     footy     footy";
 }
 
-header {grid-area: heady; background:#f0a1a1;}
-nav {grid-area: navvy; background:#f0a1a1;}
-main {grid-area: mainy; background: #f0a1a1; max-height: 100%;}
-footer {grid-area: footy; background: #f0a1a1;}
+header {grid-area: heady; background:#ffe96d;}
+nav {grid-area: navvy; background:#ffe96d;}
+main {grid-area: mainy; background: white; max-height: 100%;}
+footer {grid-area: footy; background: white;}
 
 nav ul {
 display: flex;
@@ -115,7 +122,7 @@ nav ul li a:link {
 }
 nav ul li a:visited {
     text-decoration: none;
-    color: blue;
+    color: rgb(0, 0, 199);
 }
 
 @media screen
@@ -155,4 +162,43 @@ nav ul li a {
   background: white;
 
 }
+}
+
+table, th, td{
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.skip-link {
+  background: black;
+  color: white;
+  font-weight: 700;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus{
+  transform: translateY(0)
+}
+
+.skip-link {
+  transition: transform 0.3s;
 }
